@@ -1,4 +1,4 @@
-
+#000000
 
 # What is DreamSync?
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
