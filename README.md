@@ -12,15 +12,21 @@ Essentially, this device utilizes principles of electroencephalography (EEG) and
 # Key Components of DreamSync
 
 **Software Butterworth Bandpass Filter Algorithm:** Used to allow signals within a specific frequency range (0.5–47 Hz) to pass through with minimal signal distortion. 
+
 **Breadboard:** A platform for connecting the prototype and components without soldering. 
+
 **Jumper Cables:** Enable connections between components on the breadboard and to the Arduino for signal flow. 
+
 **AD8232 ECG Sensor with 3-Channel Electrodes:** Amplifies and filters bioelectric signals from the body, making them suitable for processing. 
+
 **Arduino Uno 3:** A microcontroller that processes the signals and sends data to a connected device for analysis. 
+
 **ADS1115 Analog-to-Digital Converter:** Converts the analog signals from the AD8232 into digital form for precise data capture. 
 
 ## Future Implementations
 
 **TL074 Amplifier with High (47 Hz) and Low (0.5 Hz) Band Filters:** Provides additional amplification and filtering for cleaner signal output. 
+
 **TES & EEGNet AI Model Integration:** Processes EEG signal data through a convolutional neural network to analyze brainwave patterns.
 
 # How does DreamSync function?
