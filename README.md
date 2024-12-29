@@ -1,4 +1,4 @@
-<img src="IMG_FCC1AF6CCD25-1.jpeg" alt="Project Screenshot" width="800">
+
 
 # What is DreamSync?
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
@@ -6,6 +6,8 @@ Essentially, this device utilizes principles of electroencephalography (EEG) and
 - **Expedite Sleep:** Elevate melatonin levels naturally to improve sleep initiation. 
 - **Advanced Sleep Quality:** Supports deeper sleep phases by optimizing hormonal balance. 
 - **Provide Individualized Treatment:** Adjusts simulation patterns based on EEG feedback and neural activity.
+  
+<img src="IMG_FCC1AF6CCD25-1.jpeg" alt="Project Screenshot" width="800">
 
 # Key Components of DreamSync
 
