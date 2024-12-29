@@ -46,4 +46,4 @@ SCN is a part of the hypothalamus that regulates the circadian rhythm by generat
 This will ultimately regulate the alkylamine N-acetyltransferase (ANNAT) activity within the pineal gland, promoting melatonin synthesis (a key hormone that regulates circadian rhythm). 
 The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; this then creates  N-acetylserotonin. This then signals another enzyme called hydroxyindole-O-methyltransferase, which synthesizes N-acetylserotonin into melatonin.
 
-<img src="IMG_6897 (1).jpg" alt="Project Screenshot" width="800">
+<img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="800">
