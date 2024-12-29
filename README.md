@@ -1,8 +1,6 @@
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 5px;">
-This block of text has a gray background with some padding.
-</div>
 
-# What is DreamSync?
+
+# ***What is DreamSync?***
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
 - **Balance Circadian Rhythms:** Increases the communication between the basal ganglia and hypothalamic-pineal rhythms to regulate melatonin synthesis. 
 - **Expedite Sleep:** Elevate melatonin levels naturally to improve sleep initiation. 
