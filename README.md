@@ -1,3 +1,4 @@
+<img src="IMG_FCC1AF6CCD25-1.jpeg" alt="Project Screenshot" width="800">
 # What is DreamSync?
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
 - **Balance Circadian Rhythms:** Increases the communication between the basal ganglia and hypothalamic-pineal rhythms to regulate melatonin synthesis. 
@@ -35,6 +36,5 @@ GABA = an inhibitory neurotransmitter that slows down brain signals. This neurot
 SCN is a part of the hypothalamus that regulates the circadian rhythm by generating signals indicating the time of day. 
 This will ultimately regulate the alkylamine N-acetyltransferase (ANNAT) activity within the pineal gland, promoting melatonin synthesis (a key hormone that regulates circadian rhythm). 
 The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; this then creates  N-acetylserotonin. This then signals another enzyme called hydroxyindole-O-methyltransferase, which synthesizes N-acetylserotonin into melatonin.
-
 
 <img src="IMG_6897 (1).jpg" alt="Project Screenshot" width="800">
