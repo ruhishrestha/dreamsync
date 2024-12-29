@@ -1,2 +1,2 @@
 # project
-![example](IMG_6897.HEIC)
+![example](IMG_6897 (1).jpg)
