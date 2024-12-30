@@ -51,11 +51,11 @@ The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; th
 
 <img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="800">
 ```mermaid
-graph TD;
-    GABA --> SCN;
-    SCN --> ANNAT(Pineal Gland);
-    ANNAT --> Synthesis of Serotonin;
-    Serotonin --> Melatonin;
+graph;
+    GABA-->SCN;
+    SCN-->ANNAT(Pineal Gland);
+    ANNAT(Pineal Gland)--> Synthesis of Serotonin;
+    Synthesis of Serotonin --> Melatonin;
 ```
 
 ## The final product of EEG sensoring:
