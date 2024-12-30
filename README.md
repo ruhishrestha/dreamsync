@@ -53,3 +53,5 @@ The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; th
 <img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="800">
 
 ## The final product of EEG sensoring:
+
+<video src='My Movie 1 - Small.mov' width=180/>
