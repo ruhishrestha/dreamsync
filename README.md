@@ -7,7 +7,7 @@ from scipy.signal import butter, lfilter
 ```
 <details>
 
-<summary> </summary>
+<summary> **Step-by-Step Code** </summary>
 
 ```
 import serial
