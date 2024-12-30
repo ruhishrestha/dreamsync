@@ -63,19 +63,22 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from scipy.signal import butter, lfilter
 ```
-<details>
 
-```
 # Serial port configuration
+```
 SERIAL_PORT = "COM3"  # Replace with your Arduino's COM port
 BAUD_RATE = 9600
 WINDOW_SIZE = 500  # Number of samples for real-time plotting
 SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
+```
 
 # Initialize serial connection
+```
 ser = serial.Serial("/dev/tty.usbmodem1101", BAUD_RATE, timeout=1)
+```
 
 # Butterworth Bandpass Filter
+```
 def butter_bandpass(lowcut, highcut, fs, order=4):
     nyquist = 0.5 * fs
     low = lowcut / nyquist
@@ -86,8 +89,10 @@ def butter_bandpass(lowcut, highcut, fs, order=4):
 def bandpass_filter(data, lowcut, highcut, fs, order=4):
     b, a = butter_bandpass(lowcut, highcut, fs, order)
     return lfilter(b, a, data)
+```
 
 # Band configurations
+```
 bands = {
     "Delta (0.5-4 Hz)": (0.5, 4),
     "Theta (4-8 Hz)": (4, 8),
@@ -95,29 +100,37 @@ bands = {
     "Beta (13-30 Hz)": (13, 30),
     "Gamma (30-45 Hz)": (30, 45),
 }
-
+```
 # Initialize data buffers
+```
 raw_data = np.zeros(WINDOW_SIZE)
 band_data = {name: np.zeros(WINDOW_SIZE) for name in bands}
 band_power = {name: 0 for name in bands}
-
+```
 # Setup plots
+```
 plt.style.use("ggplot")
 fig, axes = plt.subplots(len(bands) + 1, 1, figsize=(10, 10), sharex=True)
+```
 
 # Raw EEG plot
+```
 axes[0].set_title("Raw EEG Signal")
 axes[0].set_ylim(-3, 3)
 raw_line, = axes[0].plot(raw_data)
+```
 
 # Band-specific plots
+```
 band_lines = {}
 for ax, (name, _) in zip(axes[1:], bands.items()):
     ax.set_title(name)
     ax.set_ylim(-0.5, 0.5)
     band_lines[name], = ax.plot(band_data[name])
+```
 
 # Predominant wave label
+```
 fig.text(0.5, 0.95, "", ha="center", fontsize=16, fontweight="bold", color="blue")
 
 def update(frame):
@@ -157,18 +170,24 @@ def update(frame):
         pass  # Ignore invalid lines
 
     return [raw_line] + list(band_lines.values())
+```
 
 # Adjust plot settings
+```
 for ax in axes:
     ax.set_xlim(0, WINDOW_SIZE)
     ax.set_xlabel("Samples")
     ax.set_ylabel("Amplitude (V)")
+```
 
 # Initialize animation
+```
 ani = FuncAnimation(fig, update, blit=True, interval=50)
 plt.tight_layout()
 plt.show()
+```
 
 # Close serial connection
+```
 ser.close()
 ```
