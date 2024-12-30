@@ -57,15 +57,10 @@ The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; th
 
 <video src='My Movie 1 - Small.mov' width=180/>
 
-```import serial
+```
+import serial
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from scipy.signal import butter, lfilter
-
-# Serial port configuration
-SERIAL_PORT = "COM3"  # Replace with your Arduino's COM port
-BAUD_RATE = 9600
-WINDOW_SIZE = 500  # Number of samples for real-time plotting
-SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
 ```
