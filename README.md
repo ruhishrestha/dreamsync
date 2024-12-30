@@ -5,6 +5,22 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from scipy.signal import butter, lfilter
 ```
+<details>
+
+<summary> Step by Step of How to Code an EEG </summary>
+
+```
+# **Serial port configuration**
+SERIAL_PORT = "COM3"  # Replace with your Arduino's COM port
+BAUD_RATE = 9600
+WINDOW_SIZE = 500  # Number of samples for real-time plotting
+SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
+
+# Initialize serial connection
+ser = serial.Serial("/dev/tty.usbmodem1101", BAUD_RATE, timeout=1)
+```
+
+</details>
 
 # What is ***DreamSync?***
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
