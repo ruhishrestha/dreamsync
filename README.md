@@ -50,6 +50,13 @@ This will ultimately regulate the alkylamine N-acetyltransferase (ANNAT) activit
 The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; this then creates  N-acetylserotonin. This then signals another enzyme called hydroxyindole-O-methyltransferase, which synthesizes N-acetylserotonin into melatonin.
 
 <img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="800">
+```mermaid
+graph TD;
+    GABA --> SCN;
+    SCN --> ANNAT(Pineal Gland);
+    ANNAT --> Synthesis of Serotonin;
+    Serotonin --> Melatonin;
+```
 
 ## The final product of EEG sensoring:
 ![EEG](ezgif.com-video-to-gif-converter.gif)
