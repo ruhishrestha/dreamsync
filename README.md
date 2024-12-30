@@ -1,4 +1,10 @@
-
+```
+import serial
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+from scipy.signal import butter, lfilter
+```
 
 # What is ***DreamSync?***
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
@@ -56,11 +62,3 @@ The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; th
 ![EEG](ezgif.com-video-to-gif-converter.gif)
 
 <video src='My Movie 1 - Small.mov' width=180/>
-
-```
-import serial
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-from scipy.signal import butter, lfilter
-```
