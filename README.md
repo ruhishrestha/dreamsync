@@ -119,18 +119,24 @@ bands = {
 }
 ```
 # Initialize data buffers
+<img src="Untitled presentation (18).png" alt="Project Screenshot" width="1000">
+
 ```
 raw_data = np.zeros(WINDOW_SIZE)
 band_data = {name: np.zeros(WINDOW_SIZE) for name in bands}
 band_power = {name: 0 for name in bands}
 ```
 # Setup plots
+<img src="Untitled presentation (19).png" alt="Project Screenshot" width="1000">
+
 ```
 plt.style.use("ggplot")
 fig, axes = plt.subplots(len(bands) + 1, 1, figsize=(10, 10), sharex=True)
 ```
 
 # Raw EEG plot
+<img src="Untitled presentation (20).png" alt="Project Screenshot" width="1000">
+
 ```
 axes[0].set_title("Raw EEG Signal")
 axes[0].set_ylim(-3, 3)
@@ -138,6 +144,7 @@ raw_line, = axes[0].plot(raw_data)
 ```
 
 # Band-specific plots
+<img src="Untitled presentation (21).png" alt="Project Screenshot" width="1000">
 ```
 band_lines = {}
 for ax, (name, _) in zip(axes[1:], bands.items()):
@@ -147,6 +154,7 @@ for ax, (name, _) in zip(axes[1:], bands.items()):
 ```
 
 # Predominant wave label
+<img src="Untitled presentation (22).png" alt="Project Screenshot" width="1000">
 ```
 fig.text(0.5, 0.95, "", ha="center", fontsize=16, fontweight="bold", color="blue")
 
