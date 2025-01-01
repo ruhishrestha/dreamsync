@@ -29,7 +29,7 @@ Essentially, this device utilizes principles of electroencephalography (EEG) and
 
 **TES & EEGNet AI Model Integration:** Processes EEG signal data through a convolutional neural network to analyze brainwave patterns.
 
-<img src="Untitled presentation (10).png" alt="Project Screenshot" width="1000">
+<img src="Untitled presentation (11).png" alt="Project Screenshot" width="1000">
 
 # How does DreamSync function?
 
