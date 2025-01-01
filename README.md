@@ -73,11 +73,11 @@ from matplotlib.animation import FuncAnimation
 from scipy.signal import butter, lfilter
 ```
 
-import serial: Handles serial communication with external devices like an Arduino.
-import numpy as np: Provides numerical operations, such as creating and manipulating arrays.
-import matplotlib.pyplot as plt: Used for creating visualizations and plots.
-from matplotlib.animation import FuncAnimation: Enables real-time animation of the plots.
-from scipy.signal import butter, lfilter: Implements signal filtering, such as the Butterworth bandpass filter
+- import serial: Handles serial communication with external devices like an Arduino.
+- import numpy as np: Provides numerical operations, such as creating and manipulating arrays.
+- import matplotlib.pyplot as plt: Used for creating visualizations and plots.
+- from matplotlib.animation import FuncAnimation: Enables real-time animation of the plots.
+- from scipy.signal import butter, lfilter: Implements signal filtering, such as the Butterworth bandpass filter
 
 # Serial port configuration
 <img src="Untitled presentation (14).png" alt="Project Screenshot" width="1000">
