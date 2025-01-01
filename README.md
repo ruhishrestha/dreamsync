@@ -140,9 +140,9 @@ raw_data = np.zeros(WINDOW_SIZE)
 band_data = {name: np.zeros(WINDOW_SIZE) for name in bands}
 band_power = {name: 0 for name in bands}
 ```
-raw_data: Stores raw EEG data for real-time plotting.
-band_data: Stores filtered data for each EEG band.
-band_power: Tracks the power (RMS) of each band for analysis.
+- raw_data: Stores raw EEG data for real-time plotting.
+- band_data: Stores filtered data for each EEG band.
+- band_power: Tracks the power (RMS) of each band for analysis.
 
 # Setup plots
 <img src="Untitled presentation (19).png" alt="Project Screenshot" width="1000">
