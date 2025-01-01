@@ -74,6 +74,8 @@ from scipy.signal import butter, lfilter
 ```
 
 # Serial port configuration
+<img src="Untitled presentation (14).png" alt="Project Screenshot" width="1000">
+
 ```
 SERIAL_PORT = "COM3"  # Replace with your Arduino's COM port
 BAUD_RATE = 9600
@@ -82,11 +84,15 @@ SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
 ```
 
 # Initialize serial connection
+<img src="Untitled presentation (15).png" alt="Project Screenshot" width="1000">
+
 ```
 ser = serial.Serial("/dev/tty.usbmodem1101", BAUD_RATE, timeout=1)
 ```
 
 # Butterworth Bandpass Filter
+<img src="Untitled presentation (16).png" alt="Project Screenshot" width="1000">
+
 ```
 def butter_bandpass(lowcut, highcut, fs, order=4):
     nyquist = 0.5 * fs
@@ -101,6 +107,8 @@ def bandpass_filter(data, lowcut, highcut, fs, order=4):
 ```
 
 # Band configurations
+<img src="Untitled presentation (17).png" alt="Project Screenshot" width="1000">
+
 ```
 bands = {
     "Delta (0.5-4 Hz)": (0.5, 4),
