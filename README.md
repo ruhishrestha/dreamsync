@@ -7,7 +7,7 @@ Essentially, this device utilizes principles of electroencephalography (EEG) and
 - **Advanced Sleep Quality:** Supports deeper sleep phases by optimizing hormonal balance. 
 - **Provide Individualized Treatment:** Adjusts simulation patterns based on EEG feedback and neural activity.
   
-<img src="IMG_FCC1AF6CCD25-1.jpeg" alt="Project Screenshot" width="800">
+<img src="IMG_FCC1AF6CCD25-1.jpeg" alt="Project Screenshot" width="1000">
 
 # Key Components of DreamSync
 
