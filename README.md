@@ -45,12 +45,17 @@ Essentially, this device utilizes principles of electroencephalography (EEG) and
 
 # The Science Inside Our Brains
 
-DreamSync targets the brain’s basal ganglia, specifically in areas like the subthalamic nucleus (STN) and the globus pallidus internus (GPi), to influence the suprachiasmatic nucleus (SCN) contingently. 
-The STN and GPi both have an important neurotransmitter that is connected to sleep: Gamma-aminobutyric acid (GABA).
-GABA = an inhibitory neurotransmitter that slows down brain signals. This neurotransmitter then influences the SCN. 
-SCN is a part of the hypothalamus that regulates the circadian rhythm by generating signals indicating the time of day. 
-This will ultimately regulate the alkylamine N-acetyltransferase (ANNAT) activity within the pineal gland, promoting melatonin synthesis (a key hormone that regulates circadian rhythm). 
-The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; this then creates  N-acetylserotonin. This then signals another enzyme called hydroxyindole-O-methyltransferase, which synthesizes N-acetylserotonin into melatonin.
+**Targeting Basal Ganglia:**
+DreamSync targets the subthalamic nucleus (STN) and globus pallidus internus (GPi) in the basal ganglia, which influence the suprachiasmatic nucleus (SCN).
+
+**Role of GABA and SCN Regulation:**
+The STN and GPi utilize GABA, an inhibitory neurotransmitter that slows brain signals and affects the SCN, a hypothalamic region regulating circadian rhythms by generating time-of-day signals.
+
+**SCN and ANNAT Activation:**
+The SCN modulates alkylamine N-acetyltransferase (ANNAT) in the pineal gland, which promotes melatonin synthesis, a key hormone in circadian rhythm regulation.
+
+**Melatonin Synthesis Process:**
+ANNAT converts serotonin into N-acetylserotonin, which is further transformed into melatonin by the enzyme hydroxyindole-O-methyltransferase (HIOMT).
 
 <img src="Untitled presentation (11).png" alt="Project Screenshot" width="1000">
 
