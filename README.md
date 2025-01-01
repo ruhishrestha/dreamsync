@@ -155,6 +155,9 @@ for ax, (name, _) in zip(axes[1:], bands.items()):
 
 # Predominant wave label
 <img src="Untitled presentation (22).png" alt="Project Screenshot" width="1000">
+<img src="Untitled presentation (26).png" alt="Project Screenshot" width="1000">
+
+
 ```
 fig.text(0.5, 0.95, "", ha="center", fontsize=16, fontweight="bold", color="blue")
 
@@ -198,6 +201,8 @@ def update(frame):
 ```
 
 # Adjust plot settings
+<img src="Untitled presentation (23).png" alt="Project Screenshot" width="1000">
+
 ```
 for ax in axes:
     ax.set_xlim(0, WINDOW_SIZE)
@@ -206,6 +211,8 @@ for ax in axes:
 ```
 
 # Initialize animation
+<img src="Untitled presentation (24).png" alt="Project Screenshot" width="1000">
+
 ```
 ani = FuncAnimation(fig, update, blit=True, interval=50)
 plt.tight_layout()
@@ -213,6 +220,8 @@ plt.show()
 ```
 
 # Close serial connection
+<img src="Untitled presentation (25).png" alt="Project Screenshot" width="1000">
+
 ```
 ser.close()
 ```
