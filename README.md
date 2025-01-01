@@ -1,4 +1,6 @@
 # What is ***DreamSync?***
+<img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="1000">
+
 Essentially, this device utilizes principles of electroencephalography (EEG) and transcranial electrical stimulation (TES) to create targeted low-intensity electrical pulses to basal ganglia pathways. By regulating these pathways, DreamSync seeks to:
 - **Balance Circadian Rhythms:** Increases the communication between the basal ganglia and hypothalamic-pineal rhythms to regulate melatonin synthesis. 
 - **Expedite Sleep:** Elevate melatonin levels naturally to improve sleep initiation. 
@@ -48,14 +50,6 @@ SCN is a part of the hypothalamus that regulates the circadian rhythm by generat
 This will ultimately regulate the alkylamine N-acetyltransferase (ANNAT) activity within the pineal gland, promoting melatonin synthesis (a key hormone that regulates circadian rhythm). 
 The ANNAT synthesizes melatonin by transferring an acetyl group to serotonin; this then creates  N-acetylserotonin. This then signals another enzyme called hydroxyindole-O-methyltransferase, which synthesizes N-acetylserotonin into melatonin.
 
-<img src="IMG_7E25AC653C08-1.jpeg" alt="Project Screenshot" width="800">
-```mermaid
-graph;
-    GABA-->SCN;
-    SCN-->ANNAT(Pineal Gland);
-    ANNAT(Pineal Gland)--> Synthesis of Serotonin;
-    Synthesis of Serotonin --> Melatonin;
-```
 
 ## The final product of EEG sensoring:
 ![EEG](ezgif.com-video-to-gif-converter.gif)
