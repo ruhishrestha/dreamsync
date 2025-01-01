@@ -73,6 +73,12 @@ from matplotlib.animation import FuncAnimation
 from scipy.signal import butter, lfilter
 ```
 
+import serial: Handles serial communication with external devices like an Arduino.
+import numpy as np: Provides numerical operations, such as creating and manipulating arrays.
+import matplotlib.pyplot as plt: Used for creating visualizations and plots.
+from matplotlib.animation import FuncAnimation: Enables real-time animation of the plots.
+from scipy.signal import butter, lfilter: Implements signal filtering, such as the Butterworth bandpass filter
+
 # Serial port configuration
 <img src="Untitled presentation (14).png" alt="Project Screenshot" width="1000">
 
@@ -82,6 +88,8 @@ BAUD_RATE = 9600
 WINDOW_SIZE = 500  # Number of samples for real-time plotting
 SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
 ```
+Sets up constants like SERIAL_PORT, BAUD_RATE, and WINDOW_SIZE for communication and plotting.
+Initializes the serial connection with the specified port and baud rate.
 
 # Initialize serial connection
 <img src="Untitled presentation (15).png" alt="Project Screenshot" width="1000">
@@ -106,6 +114,9 @@ def bandpass_filter(data, lowcut, highcut, fs, order=4):
     return lfilter(b, a, data)
 ```
 
+butter_bandpass: Creates a bandpass filter with specified frequency ranges and order.
+bandpass_filter: Applies the bandpass filter to the given data, isolating specific frequency bands.
+
 # Band configurations
 <img src="Untitled presentation (17).png" alt="Project Screenshot" width="1000">
 
@@ -118,6 +129,9 @@ bands = {
     "Gamma (30-45 Hz)": (30, 45),
 }
 ```
+
+Defines frequency ranges for EEG bands (e.g., Delta, Theta, Alpha) using a dictionary.
+
 # Initialize data buffers
 <img src="Untitled presentation (18).png" alt="Project Screenshot" width="1000">
 
@@ -126,6 +140,10 @@ raw_data = np.zeros(WINDOW_SIZE)
 band_data = {name: np.zeros(WINDOW_SIZE) for name in bands}
 band_power = {name: 0 for name in bands}
 ```
+raw_data: Stores raw EEG data for real-time plotting.
+band_data: Stores filtered data for each EEG band.
+band_power: Tracks the power (RMS) of each band for analysis.
+
 # Setup plots
 <img src="Untitled presentation (19).png" alt="Project Screenshot" width="1000">
 
@@ -133,6 +151,9 @@ band_power = {name: 0 for name in bands}
 plt.style.use("ggplot")
 fig, axes = plt.subplots(len(bands) + 1, 1, figsize=(10, 10), sharex=True)
 ```
+Creates subplots for visualizing the raw EEG signal and each frequency band.
+Configures plot titles, styles, and axis limits.
+Sets up an indicator for the predominant EEG wave.
 
 # Raw EEG plot
 <img src="Untitled presentation (20).png" alt="Project Screenshot" width="1000">
@@ -218,6 +239,9 @@ ani = FuncAnimation(fig, update, blit=True, interval=50)
 plt.tight_layout()
 plt.show()
 ```
+Sets axis limits and labels for the plots.
+Initializes a real-time animation using FuncAnimation, updating the plots every 50ms.
+Displays the plot window and animates data in real-time.
 
 # Close serial connection
 <img src="Untitled presentation (25).png" alt="Project Screenshot" width="1000">
