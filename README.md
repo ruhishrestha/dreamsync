@@ -130,7 +130,7 @@ bands = {
 }
 ```
 
-Defines frequency ranges for EEG bands (e.g., Delta, Theta, Alpha) using a dictionary.
+- Defines frequency ranges for EEG bands (e.g., Delta, Theta, Alpha) using a dictionary.
 
 # Initialize data buffers
 <img src="Untitled presentation (18).png" alt="Project Screenshot" width="1000">
