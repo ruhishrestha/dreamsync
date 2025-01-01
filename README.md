@@ -88,8 +88,8 @@ BAUD_RATE = 9600
 WINDOW_SIZE = 500  # Number of samples for real-time plotting
 SAMPLING_RATE = 100  # Hz (adjust to your actual sampling rate)
 ```
-Sets up constants like SERIAL_PORT, BAUD_RATE, and WINDOW_SIZE for communication and plotting.
-Initializes the serial connection with the specified port and baud rate.
+- Sets up constants like SERIAL_PORT, BAUD_RATE, and WINDOW_SIZE for communication and plotting.
+- Initializes the serial connection with the specified port and baud rate.
 
 # Initialize serial connection
 <img src="Untitled presentation (15).png" alt="Project Screenshot" width="1000">
@@ -114,8 +114,8 @@ def bandpass_filter(data, lowcut, highcut, fs, order=4):
     return lfilter(b, a, data)
 ```
 
-butter_bandpass: Creates a bandpass filter with specified frequency ranges and order.
-bandpass_filter: Applies the bandpass filter to the given data, isolating specific frequency bands.
+- butter_bandpass: Creates a bandpass filter with specified frequency ranges and order.
+- bandpass_filter: Applies the bandpass filter to the given data, isolating specific frequency bands.
 
 # Band configurations
 <img src="Untitled presentation (17).png" alt="Project Screenshot" width="1000">
@@ -151,9 +151,9 @@ band_power: Tracks the power (RMS) of each band for analysis.
 plt.style.use("ggplot")
 fig, axes = plt.subplots(len(bands) + 1, 1, figsize=(10, 10), sharex=True)
 ```
-Creates subplots for visualizing the raw EEG signal and each frequency band.
-Configures plot titles, styles, and axis limits.
-Sets up an indicator for the predominant EEG wave.
+- Creates subplots for visualizing the raw EEG signal and each frequency band.
+- Configures plot titles, styles, and axis limits.
+- Sets up an indicator for the predominant EEG wave.
 
 # Raw EEG plot
 <img src="Untitled presentation (20).png" alt="Project Screenshot" width="1000">
@@ -166,6 +166,7 @@ raw_line, = axes[0].plot(raw_data)
 
 # Band-specific plots
 <img src="Untitled presentation (21).png" alt="Project Screenshot" width="1000">
+
 ```
 band_lines = {}
 for ax, (name, _) in zip(axes[1:], bands.items()):
@@ -239,9 +240,9 @@ ani = FuncAnimation(fig, update, blit=True, interval=50)
 plt.tight_layout()
 plt.show()
 ```
-Sets axis limits and labels for the plots.
-Initializes a real-time animation using FuncAnimation, updating the plots every 50ms.
-Displays the plot window and animates data in real-time.
+- Sets axis limits and labels for the plots.
+- Initializes a real-time animation using FuncAnimation, updating the plots every 50ms.
+- Displays the plot window and animates data in real-time.
 
 # Close serial connection
 <img src="Untitled presentation (25).png" alt="Project Screenshot" width="1000">
@@ -249,3 +250,5 @@ Displays the plot window and animates data in real-time.
 ```
 ser.close()
 ```
+
+- Ensures the serial connection is properly closed when the program exits.
